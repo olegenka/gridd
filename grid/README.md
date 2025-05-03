@@ -58,6 +58,12 @@ $body = @{
 Invoke-RestMethod -Uri "http://localhost:5000/users" -Method Post -Body $body -ContentType "application/json"
 ```
 
+### DELETE /users/{id}
+Удаление пользователя по ID:
+```powershell
+Invoke-RestMethod -Uri "http://localhost:5000/users/1" -Method Delete
+```
+
 ### GET /messages
 Получение списка всех сообщений:
 ```powershell
